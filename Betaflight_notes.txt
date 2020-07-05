@@ -1,0 +1,24 @@
+
+Model.prototype.dispose = function () {
+    //this.renderer.forceContextLoss();
+    //this.renderer.dispose();
+};
+
+Simple fix - commented out
+
+/home/pi/betaflight-configurator_10.6.0/apps/betaflight-configurator/armv7/js/model.js
+
+Model.prototype.dispose = function () {
+    //this.renderer.forceContextLoss();
+    //this.renderer.dispose();
+};
+
+Error - wouldn't change tabs.
+
+model.js:149 Uncaught TypeError: this.renderer.forceContextLoss is not a function
+    at Model.dispose (model.js:149)
+    at Object.TABS.setup.cleanup (setup.js:348)
+    at GUI_control.tab_switch_cleanup (gui.js:263)
+    at HTMLAnchorElement.<anonymous> (main.js:181)
+    at HTMLAnchorElement.dispatch (jquery.min.js:2)
+    at HTMLAnchorElement.v.handle (jquery.min.js:2)
